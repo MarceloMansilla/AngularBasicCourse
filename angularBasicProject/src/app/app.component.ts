@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularBasicProject';
+  progress = 0;
+  totalCountdown = 15;
 }
