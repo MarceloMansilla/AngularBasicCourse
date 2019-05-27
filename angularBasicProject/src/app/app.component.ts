@@ -9,4 +9,14 @@ export class AppComponent {
   title = 'angularBasicProject';
   progress = 0;
   totalCountdown = 15;
+
+  constructor() { }
+
+  updateProgress($event) {
+    this.progress = (this.totalCountdown - $event) / this.totalCountdown * 100;
+  }
+
+  countdownFinished() {
+    console.log('countdown has finished');
+  }
 }
